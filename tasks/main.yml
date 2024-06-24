@@ -1,0 +1,5 @@
+---
+- name: nginx
+  package:
+    name: nginx
+    state: latest

@@ -1,0 +1,10 @@
+---
+# tasks file for Don
+- name: install apache
+  package:
+    name: apache2
+    state: latest
+- name: copy index.html
+  copy:
+    src: files/index.html
+    dest: /var/www/html
